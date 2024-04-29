@@ -1,0 +1,35 @@
+# Главный раздел, который определяет запросы и мутации
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+# Определение типа Post
+type Post {
+  id: ID!
+  title: String!
+  content: String!
+  allowComments: Boolean!  # Указывает, разрешены ли комментарии
+}
+
+# Определение типа Comment
+type Comment {
+  id: ID!  # Идентификатор комментария
+  postID: ID!  # Идентификатор поста, к которому принадлежит комментарий
+  content: String!  # Текст комментария
+  parentID: ID  # Идентификатор родительского комментария (может быть nil)
+  children: [Comment!]!  # Дочерние комментарии
+}
+
+# Определение запросов (Queries)
+type Query {
+  posts: [Post!]!  # Получение всех постов
+  post(id: ID!): Post  # Получение поста по идентификатору
+  comments(postID: ID!, parentID: ID, offset: Int = 0, limit: Int = 10): [Comment!]!
+}
+
+# Определение мутаций (Mutations)
+type Mutation {
+  createPost(title: String!, content: String!, allowComments: Boolean!): Post  # Создание нового поста
+  createComment(postID: ID!, content: String!, parentID: ID): Comment  # Создание комментария к посту
+}

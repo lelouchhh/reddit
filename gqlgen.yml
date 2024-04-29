@@ -1,0 +1,30 @@
+# Путь к схеме GraphQL
+schema:
+  - schema.graphql  # Убедитесь, что файл существует
+
+# Путь к сгенерированному коду
+exec:
+  filename: internal/resolvers/generated.go  # Сгенерированный код
+  package: resolvers  # Имя пакета
+
+# Путь к сгенерированным моделям
+model:
+  filename: internal/entities/models_gen.go  # Путь к моделям
+  package: entities  # Имя пакета
+
+# Путь к резолверам
+resolver:
+  layout: single-file
+  filename: internal/resolvers/resolvers.go  # Убедитесь, что путь правильный
+
+# Маппинг между типами GraphQL и Go
+models:
+  ID:
+    model:
+      - github.com/99designs/gqlgen/graphql.ID  # Убедитесь, что пакет указ
+  Post:
+    model:
+      - reddit/internal/entities.Post  # Маппинг сущности Post
+  Comment:
+    model:
+      - reddit/internal/entities.Comment  # Маппинг сущности Comment
