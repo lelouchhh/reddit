@@ -1,7 +1,7 @@
 # r3ddd1t service
 
 
-### Project tree:
+### Дерево проекта
 ```
 reddit
 ├── Dockerfile              # Dockerfile для сборки Docker-образа
@@ -42,15 +42,15 @@ reddit
 
 ```
 
-### How to use
+### Как запустить
 ```
 docker compose up --build
 ```
 
-### end point for queries:
+### Ендпоинт для запросов
 ```http://localhost:8080/playground```
 
-### Example of queries
+### Примеры запросов
 ```azure
 mutation{
   

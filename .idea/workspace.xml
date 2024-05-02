@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b88f01a-bce5-4dcc-97ca-e17c1d573c4a" name="Changes" comment="" />
+    <list default="true" id="9b88f01a-bce5-4dcc-97ca-e17c1d573c4a" name="Changes" comment="without tests">
+      <change afterPath="$USER_HOME$/GolandProjects/patterns/reddit/internal/usecases/usecase_test.go" afterDir="false" />
+      <change beforePath="$USER_HOME$/GolandProjects/patterns/reddit/.env" beforeDir="false" afterPath="$USER_HOME$/GolandProjects/patterns/reddit/.env" afterDir="false" />
+      <change beforePath="$USER_HOME$/GolandProjects/patterns/reddit/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/GolandProjects/patterns/reddit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/GolandProjects/patterns/reddit/cmd/main.go" beforeDir="false" afterPath="$USER_HOME$/GolandProjects/patterns/reddit/cmd/main.go" afterDir="false" />
+      <change beforePath="$USER_HOME$/GolandProjects/patterns/reddit/docker-compose.yml" beforeDir="false" afterPath="$USER_HOME$/GolandProjects/patterns/reddit/docker-compose.yml" afterDir="false" />
+      <change beforePath="$USER_HOME$/GolandProjects/patterns/reddit/internal/infrastructure/database/postgres.go" beforeDir="false" afterPath="$USER_HOME$/GolandProjects/patterns/reddit/internal/infrastructure/database/postgres.go" afterDir="false" />
+      <change beforePath="$USER_HOME$/GolandProjects/patterns/reddit/readme.md" beforeDir="false" afterPath="$USER_HOME$/GolandProjects/patterns/reddit/readme.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +26,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/GolandProjects/patterns/reddit" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="tdt1uc2o" />
   </component>
@@ -108,6 +119,10 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="without tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="without tests" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

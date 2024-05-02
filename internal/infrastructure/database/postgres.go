@@ -4,7 +4,9 @@ import (
 	"database/sql"
 	"fmt"
 	"github.com/joho/godotenv"
+	_ "github.com/lib/pq"
 	"os"
+	"reddit/pkg/logger"
 )
 
 func NewPostgres() (*sql.DB, error) {
@@ -29,9 +31,10 @@ func NewPostgres() (*sql.DB, error) {
 	dsn := fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=disable",
 		postgresUser, postgresPassword, postgresHost, postgresPort, postgresDB)
 	// Подключение к базе данных PostgreSQL
+	logger.GlobalLogger.Info(dsn)
 	db, err := sql.Open("postgres", dsn)
 	if err != nil {
-		return nil, fmt.Errorf("Failed to connect to PostgreSQ")
+		return nil, fmt.Errorf(err.Error())
 	}
 	err = db.Ping()
 	if err != nil {

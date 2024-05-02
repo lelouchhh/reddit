@@ -39,7 +39,7 @@ func main() {
 		postRepo = memory.NewInMemoryPostRepository()
 		commentRepo = memory.NewInMemoryCommentRepository()
 	} else {
-		logger.GlobalLogger.Error(err.Error())
+		logger.GlobalLogger.Error("can't choose storage type")
 
 		log.Fatalf("Unknown storage type: %s", storageType)
 	}
